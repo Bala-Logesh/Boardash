@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boardash</title>
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+         <!-- Navbar -->
+        <nav class="navbar">
+            <!-- Main title -->
+            <h1 class="title">BOARDASH</h1>
+
+            <!-- Searchbar and button -->
+            <div class="searchbar">
+                <input type="text" placeholder="Search message, people, ticket">
+                <i class="far fa-search"></i>
+            </div>
+
+            <!-- Alert and icon -->
+            <div class="alert">
+                <i class="far fa-bell"></i>
+                <a href="#">Set Alert</a>
+            </div>
+
+            <!-- User photo and name -->
+            <div class="user-login">
+                <img src="./images/nav-img.jpg" alt="">
+                <a href="#">Essie Howell</a>
+                <i class="fa fa-plus"></i>
+            </div>
+        </nav>
+
+        <div class="main-section">
+
+            <!-- Sidebar Section -->
+            <section class="sidebar">
+
+                <!-- Bookmark at the top -->
+                <i class="fas fa-bookmark"></i>
+
+                <!-- User information -->
+                <div class="user-info">
+                    <img src="./images/nav-img.jpg" alt="">
+                    <div class="content">
+                        <h2>Essie Howell</h2>
+                        <h3>Super Admin</h3>
+                    </div>
+                </div>
+
+                <ul class="menu">
+                    <li class="menu-item">
+                        <i class="fas fa-th-large"></i>
+                        <h2>Overview</h2>
+                    </li>
+                    <li class="menu-item">
+                        <i class="fas fa-bookmark"></i>
+                        <h2>Reservation</h2>
+                    </li>
+                    <li class="menu-item">
+                        <i class="fas fa-window-maximize"></i>
+                        <h2>Meeting</h2>
+                    </li>
+                    <li class="menu-item">
+                        <i class="fas fa-user-friends"></i>
+                        <h2>Customers</h2>
+                    </li>
+                    <li class="menu-item">
+                        <i class="fas fa-ticket-alt"></i>
+                        <h2>Ticket</h2>
+                    </li>
+                    <li class="menu-item active-item">
+                        <i class="fas fa-comments"></i>
+                        <h2>Message</h2>
+                    </li>
+                    <li class="menu-item">
+                        <i class="fas fa-user"></i>
+                        <h2>Profile</h2>
+                    </li>
+                </ul>
+
+                <!-- Logout -->
+                <div class="menu-item logout">
+                    <i class="fas fa-power-off"></i>
+                    <h2>Logout</h2>
+                </div>
+            </section>
+
+            <!-- Main section -->
+            <main>
+
+                <!-- Header Row -->
+                <div class="header-row">
+                    <h1>Messages</h1>
+
+                    <div class="float-right">
+                        <div class="pagination">
+                            <i class="fas fa-less-than"></i>
+                            <h2>1 - 50 pages</h2>
+                            <i class="fas fa-greater-than"></i>
+                        </div>
+
+                        <a href="#" class="btn btn-primary">All</a>
+
+                        <div class="button-grp">
+                            <a href="#" class="btn btn-plain">Unread</a>
+                            <a href="#" class="btn btn-plain">Important</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Meeting row -->
+                <div class="live-meeting">
+                    <div class="info">
+                        <img src="./images/" class="user-icon" alt="">
+                        <div class="names">
+                            <h2>Sales Presentation - Live Group Call</h2>
+                            <h3>adams_ka@gmail.com</h3>
+                            <h4>Started 3 min ago</h4>
+                        </div>
+                    </div>
+
+                    <div class="circles-stacked">
+                        <ul class="cirles">
+                            <li class="circle">A</li>
+                            <li class="circle">K</li>
+                            <li class="circle">D</li>
+                            <li class="circle">V</li>
+                        </ul>
+                        <h3>+5 more</h3>
+                    </div>
+
+                    <a href="#" class="btn btn-transparent">You're Invited</a>
+                    
+                    <a href="#" class="btn btn-solid">
+                        <i class="fas fa-video"></i>
+                        <h3>Join Now</h3>
+                    </a>
+                </div>
+
+                <!-- Cards row -->
+                <div class="cards-section">
+                    <div class="top-row">
+                        <h2>Today - 3 meeting</h2>
+                        <h4>Hide this</h4>
+                    </div>
+                    <div class="cards">
+
+                        <!-- Card 1 -->
+                        <div class="card">
+                            <div class="info">
+                                <img src="./images/c11.jpg" class="user-icon" alt="user-image">
+                                <div class="names">
+                                    <h2>Design Catchup</h2>
+                                    <h4>adellac@josianne.com</h4>
+                                    <h3>10 : 30 AM</h3>
+                                </div>
+                            </div>
+
+                            <div class="status">
+                                <h3>9 Members Going</h3>
+                                <h3>2 Pending</h3>
+                            </div>
+
+                            <div class="circles-stacked">
+                                <ul class="cirles">
+                                    <li class="circle"><img src="./images/c121.jpg" class="user-icon-small" alt="user-image"></li>
+                                    <li class="circle"><img src="./images/c122.jpg" class="user-icon-small" alt="user-image"></li>
+                                    <li class="circle"><img src="./images/c123.jpg" class="user-icon-small" alt="user-image"></li>
+                                    <li class="circle"><img src="./images/c124.jpg" class="user-icon-small" alt="user-image"></li>
+                                </ul>
+                                <h3>+5 more</h3>
+                            </div>
+
+                            <a href="#" class="btn btn-block">View Details</a>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="card">
+                            <div class="info">
+                                <img src="./images/c31.jpg" class="user-icon" alt="user-image">
+                                <div class="names">
+                                    <h2>Sales Presentation</h2>
+                                    <h4>adams_ka@gmail.com</h4>
+                                    <h3>11 : 30 AM</h3>
+                                </div>
+                            </div>
+
+                            <div class="status">
+                                <h3>9 Members Going</h3>
+                                <h3>3 Not joining</h3>
+                            </div>
+
+                            <div class="circles-stacked">
+                                <ul class="cirles">
+                                    <li class="circle"><img src="./images/c221.jpg" class="user-icon-small" alt="user-image"></li>
+                                    <li class="circle"><img src="./images/c222.jpg" class="user-icon-small" alt="user-image"></li>
+                                    <li class="circle"><img src="./images/c223.jpg" class="user-icon-small" alt="user-image"></li>
+                                    <li class="circle"><img src="./images/c224.jpg" class="user-icon-small" alt="user-image"></li>
+                                </ul>
+                                <h3>+5 more</h3>
+                            </div>
+
+                            <a href="#" class="btn btn-block">View Details</a>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="card">
+                            <div class="info">
+                                <img src="./images/c31.jpg" class="user-icon" alt="user-image">
+                                <div class="names">
+                                    <h2>Daily Meeting</h2>
+                                    <h4>johnson.eva@santos.ca</h4>
+                                    <h3>12 : 00 AM</h3>
+                                </div>
+                            </div>
+
+                            <div class="status">
+                                <h3>5 Members Going</h3>
+                                <h3>5 Pending</h3>
+                            </div>
+
+                            <div class="circles-stacked">
+                                <ul class="cirles">
+                                    <li class="circle"><img src="./images/c321.jpg" class="user-icon-small" alt="user-image"></li>
+                                    <li class="circle"><img src="./images/c322.jpg" class="user-icon-small" alt="user-image"></li>
+                                    <li class="circle"><img src="./images/c323.jpg" class="user-icon-small" alt="user-image"></li>
+                                    <li class="circle"><img src="./images/c324.jpg" class="user-icon-small" alt="user-image"></li>
+                                </ul>
+                                <h3>+6 more</h3>
+                            </div>
+
+                            <a href="#" class="btn btn-block">View Details</a>
+                        </div>
+
+                        <div class="card new-card">
+                            <i class="fa fa-plus"></i>
+                            <a href="#">Add Meetings</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inbox row -->
+                <div class="inbox-section">
+                    <div class="top-row">
+                        <h2>Inbox - 678</h2>
+                    </div>
+
+                    <!-- Message 1 -->
+                    <div class="inbox-msg">
+                        <input type="checkbox" name="select" id="select">
+                        <img src="./images/inbox1.jpg" alt="user-image">
+                        <h2>Joseph Kennedy</h2>
+                        <div class="msg">
+                            <p><span>User Testing</span> Hi James, We need to do user testing by monday, Please add me in slack group.....</p>
+                        </div>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+
+                    <!-- Message 2 -->
+                    <div class="inbox-msg">
+                        <input type="checkbox" name="select" id="select">
+                        <img src="./images/inbox2.jpg" alt="user-image">
+                        <h2>Jeanette Schneider</h2>
+                        <div class="msg">
+                            <p><span>Design</span> Every week, we bring you the stories of people across the globe --Shopify merc..... </p>
+                        </div>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+
+                    <!-- Message 3 -->
+                    <div class="inbox-msg">
+                        <input type="checkbox" name="select" id="select">
+                        <img src="./images/inbox3.jpg" alt="user-image">
+                        <h2>Brandom Mack</h2>
+                        <div class="msg">
+                            <p><span>Development</span> Kaspars Ipmanis is now following you. You have a new follower on Dribble..... </p>
+                        </div>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+
+                    <!-- Message 4 -->
+                    <div class="inbox-msg">
+                        <input type="checkbox" name="select" id="select">
+                        <img src="./images/inbox4.jpg" alt="user-image">
+                        <h2>Frank Malone</h2>
+                        <div class="msg">
+                            <p><span>Meeting with jack</span> Hi James, We need to do user testing by monday, Please add me in slack group.....</p>
+                        </div>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
