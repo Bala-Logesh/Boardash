@@ -35,6 +35,7 @@ body{
 a{
     text-decoration: none;
     color: var(--clr-text-sec);
+    font-size: 0.8rem;
 }
 
 ul{
@@ -59,8 +60,13 @@ h2{
 }
 
 h3{
+    font-size: 0.8rem;
+}
+
+h4{
     font-size: 0.7rem;
     color: var(--clr-text-ter);
+    font-weight: 400;
 }
 
 /* Pseudo Classes */
@@ -74,7 +80,7 @@ h3{
     color: var(--clr-text-sec);
     border: 2px solid var(--clr-border);
     padding: 10px 25px;
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
 /* Navbar */
@@ -137,6 +143,7 @@ h3{
     border: 2px solid var(--clr-border);
     border-radius: 50%;
     font-size: 0.6rem;
+    cursor: pointer;
 }
 
 /* Main section */
@@ -247,6 +254,7 @@ main{
 /* Header Row */
 .header-row{
     width: 100%;
+    margin-bottom: 1.4rem;
 }
 
 .header-row.flex{
@@ -256,6 +264,127 @@ main{
 .float-right.flex{
     gap: 20px;
 }
+
+.pagination.flex{
+    gap: 15px;
+}
+
+.pagination i{
+    color: var(--clr-text-ter);
+    cursor: pointer;
+}
+
+.header-row .btn-primary{
+    background-color: var(--clr-highlight);
+    color: var(--clr-primary);
+    border: none;
+    padding: 10px 30px;
+}
+
+.header-row .button-grp .btn-plain:first-child{
+    border-right: 0;
+    padding: 10px 30px;
+    border-radius: 3px 0 0 3px;
+}
+
+.header-row .button-grp .btn-plain:nth-child(2){
+    border-radius: 0 3px 3px 0;
+}
+
+/* Live Meeting row */
+.live-meeting{
+    background: linear-gradient(to right, var(--clr-grad1), var(--clr-grad2));
+    padding: 15px 20px;
+    color: var(--clr-primary);
+    overflow: hidden;
+}
+
+.live-meeting.flex{
+    justify-content: space-between
+}
+
+.live-meeting .info{
+    position: relative;
+}
+
+.live-meeting .info.flex{
+    gap: 10px;
+}
+
+.live-meeting .info .names h3{
+    padding: 2px 0 3px;
+}
+
+.live-meeting .info .names h4{
+    margin-top: 2px;
+}
+
+.live-meeting .info .big-a{
+    color: var(--clr-text-prim);
+    font-size: 2rem;
+    height: 60px;
+    width: 60px;
+    background-color: var(--clr-bg3);
+    border: 4px solid var(--clr-border1);
+    border-radius: 50%;
+}
+
+.live-meeting .info i{
+    font-size: 5rem;
+    position: absolute;
+    top: 20px;
+    left: 210px;
+    opacity: 0.2;
+}
+
+.circles-stacked.flex{
+    gap: 10px;
+}
+
+.live-meeting .circles-stacked .circles .circle{
+    height: 30px;
+    width: 30px;
+    border: 1.4px solid var(--clr-border);
+    border-radius: 50%;
+    margin-left: -6px;
+    background-color: #934ef1;
+}
+
+.circles-stacked .circles .circle:first-child{
+    border: 2px solid var(--clr-primary);
+}
+
+.circles-stacked .circles .circle img{
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--clr-border);
+    margin-left: -8px;
+    object-fit: cover;
+}
+
+.live-meeting .btn-transparent{
+    color: var(--clr-primary);
+    border: 1px solid var(--clr-border);
+}
+
+.live-meeting .btn-solid.flex{
+    gap: 10px;
+}
+
+.live-meeting .btn-solid{
+    background-color: var(--clr-primary);
+    border: 1px solid var(--clr-primary);
+}
+
+.live-meeting .btn-solid h3{
+    color: var(--clr-text-prim);
+}
+
+
+
+
+
+
 
 /* Big Plus */
 .big-plus{
