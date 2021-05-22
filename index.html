@@ -16,27 +16,29 @@
     <div class="container">
 
          <!-- Navbar -->
-        <nav class="navbar flex">
-            <!-- Main title -->
-            <h1 class="title">BOARDASH</h1>
+        <nav class="navbar">
+            <div class="nav-container flex">
+                <!-- Main title -->
+                <h1 class="title">BOARDASH</h1>
 
-            <!-- Searchbar and button -->
-            <div class="searchbar flex">
-                <input type="text" placeholder="Search message, people, ticket">
-                <i class="fas fa-search"></i>
-            </div>
+                <!-- Searchbar and button -->
+                <div class="searchbar flex">
+                    <input type="text" placeholder="Search message, people, ticket">
+                    <i class="fas fa-search"></i>
+                </div>
 
-            <!-- Alert and icon -->
-            <div class="alert flex">
-                <i class="far fa-bell"></i>
-                <a href="#">Set Alert</a>
-            </div>
+                <!-- Alert and icon -->
+                <div class="alert flex">
+                    <i class="far fa-bell"></i>
+                    <a href="#">Set Alert</a>
+                </div>
 
-            <!-- User photo and name -->
-            <div class="user-login flex">
-                <img src="./images/nav-img.jpg" alt="">
-                <a href="#">Essie Howell</a>
-                <i class="fa fa-plus"></i>
+                <!-- User photo and name -->
+                <div class="user-login flex">
+                    <img src="./images/nav-img.jpg" alt="">
+                    <a href="#">Essie Howell</a>
+                    <i class="fa fa-plus"></i>
+                </div>
             </div>
         </nav>
 
@@ -150,24 +152,24 @@
 
                 <!-- Cards row -->
                 <div class="cards-section">
-                    <div class="top-row">
+                    <div class="top-row flex">
                         <h2>Today - 3 meeting</h2>
-                        <h4>Hide this</h4>
+                        <a href="#">Hide this</a>
                     </div>
-                    <div class="cards">
+                    <div class="cards flex">
 
                         <!-- Card 1 -->
-                        <div class="card">
-                            <div class="info">
+                        <div class="card flex">
+                            <div class="info flex">
                                 <img src="./images/c11.jpg" class="user-icon" alt="user-image">
-                                <div class="names">
+                                <div class="names flex">
                                     <h2>Design Catchup</h2>
                                     <h4>adellac@josianne.com</h4>
                                     <h3>10 : 30 AM</h3>
                                 </div>
                             </div>
 
-                            <div class="status">
+                            <div class="status flex">
                                 <h3>9 Members Going</h3>
                                 <h3>2 Pending</h3>
                             </div>
@@ -182,21 +184,21 @@
                                 <h3>+5 more</h3>
                             </div>
 
-                            <a href="#" class="btn btn-block">View Details</a>
+                            <a href="#" class="btn-block">View Details</a>
                         </div>
 
                         <!-- Card 2 -->
-                        <div class="card">
-                            <div class="info">
+                        <div class="card flex">
+                            <div class="info flex">
                                 <img src="./images/c21.jpg" class="user-icon" alt="user-image">
-                                <div class="names">
+                                <div class="names flex">
                                     <h2>Sales Presentation</h2>
                                     <h4>adams_ka@gmail.com</h4>
                                     <h3>11 : 30 AM</h3>
                                 </div>
                             </div>
 
-                            <div class="status">
+                            <div class="status flex">
                                 <h3>9 Members Going</h3>
                                 <h3>3 Not joining</h3>
                             </div>
@@ -204,28 +206,28 @@
                             <div class="circles-stacked flex">
                                 <ul class="circles flex">
                                     <li class="circle"><img src="./images/c221.jpg" class="user-icon-small" alt="user-image"></li>
-                                    <li class="circle"><img src="./images/c222.jpg" class="user-icon-small" alt="user-image"></li>
                                     <li class="circle"><img src="./images/c223.jpg" class="user-icon-small" alt="user-image"></li>
+                                    <li class="circle"><img src="./images/c222.jpg" class="user-icon-small" alt="user-image"></li>
                                     <li class="circle"><img src="./images/c224.jpg" class="user-icon-small" alt="user-image"></li>
                                 </ul>
                                 <h3>+5 more</h3>
                             </div>
 
-                            <a href="#" class="btn btn-block">View Details</a>
+                            <a href="#" class="btn-block">View Details</a>
                         </div>
 
                         <!-- Card 3 -->
-                        <div class="card">
-                            <div class="info">
+                        <div class="card flex">
+                            <div class="info flex">
                                 <img src="./images/c31.jpg" class="user-icon" alt="user-image">
-                                <div class="names">
+                                <div class="names flex">
                                     <h2>Daily Meeting</h2>
                                     <h4>johnson.eva@santos.ca</h4>
                                     <h3>12 : 00 AM</h3>
                                 </div>
                             </div>
 
-                            <div class="status">
+                            <div class="status flex">
                                 <h3>5 Members Going</h3>
                                 <h3>5 Pending</h3>
                             </div>
@@ -240,12 +242,14 @@
                                 <h3>+6 more</h3>
                             </div>
 
-                            <a href="#" class="btn btn-block">View Details</a>
+                            <a href="#" class="btn-block">View Details</a>
                         </div>
 
-                        <div class="card new-card">
-                            <i class="fa fa-plus"></i>
-                            <a href="#">Add Meetings</a>
+                        <div class="card new-card flex">
+                            <div class="plus flex">
+                                <i class="fa fa-plus"></i>
+                            </div>
+                            <h3>Add Meetings</h3>
                         </div>
                     </div>
                 </div>
@@ -256,48 +260,50 @@
                         <h2>Inbox - 678</h2>
                     </div>
 
-                    <!-- Message 1 -->
-                    <div class="inbox-msg">
-                        <input type="checkbox" name="select" id="select">
-                        <img src="./images/inbox1.jpg" alt="user-image">
-                        <h2>Joseph Kennedy</h2>
-                        <div class="msg">
-                            <p><span>User Testing</span> Hi James, We need to do user testing by monday, Please add me in slack group.....</p>
+                    <div class="inbox-msgs flex">
+                        <!-- Message 1 -->
+                        <div class="inbox-msg flex">
+                            <input type="checkbox" name="select" id="select">
+                            <img src="./images/inbox1.jpg" alt="user-image">
+                            <h2>Joseph Kennedy</h2>
+                            <div class="msg">
+                                <p><span>User Testing</span> Hi James, We need to do user testing by monday, Please add me in slack group.....</p>
+                            </div>
+                            <i class="fas fa-ellipsis-v"></i>
                         </div>
-                        <i class="fas fa-ellipsis-v"></i>
-                    </div>
 
-                    <!-- Message 2 -->
-                    <div class="inbox-msg">
-                        <input type="checkbox" name="select" id="select">
-                        <img src="./images/inbox2.jpg" alt="user-image">
-                        <h2>Jeanette Schneider</h2>
-                        <div class="msg">
-                            <p><span>Design</span> Every week, we bring you the stories of people across the globe --Shopify merc..... </p>
+                        <!-- Message 2 -->
+                        <div class="inbox-msg flex">
+                            <input type="checkbox" name="select" id="select">
+                            <img src="./images/inbox2.jpg" alt="user-image">
+                            <h2>Jeanette Schneider</h2>
+                            <div class="msg">
+                                <p><span>Design</span> Every week, we bring you the stories of people across the globe --Shopify merc..... </p>
+                            </div>
+                            <i class="fas fa-ellipsis-v"></i>
                         </div>
-                        <i class="fas fa-ellipsis-v"></i>
-                    </div>
 
-                    <!-- Message 3 -->
-                    <div class="inbox-msg">
-                        <input type="checkbox" name="select" id="select">
-                        <img src="./images/inbox3.jpg" alt="user-image">
-                        <h2>Brandom Mack</h2>
-                        <div class="msg">
-                            <p><span>Development</span> Kaspars Ipmanis is now following you. You have a new follower on Dribble..... </p>
+                        <!-- Message 3 -->
+                        <div class="inbox-msg flex">
+                            <input type="checkbox" name="select" id="select">
+                            <img src="./images/inbox3.jpg" alt="user-image">
+                            <h2>Brandom Mack</h2>
+                            <div class="msg">
+                                <p><span>Development</span> Kaspars Ipmanis is now following you. You have a new follower on Dribble..... </p>
+                            </div>
+                            <i class="fas fa-ellipsis-v"></i>
                         </div>
-                        <i class="fas fa-ellipsis-v"></i>
-                    </div>
 
-                    <!-- Message 4 -->
-                    <div class="inbox-msg">
-                        <input type="checkbox" name="select" id="select">
-                        <img src="./images/inbox4.jpg" alt="user-image">
-                        <h2>Frank Malone</h2>
-                        <div class="msg">
-                            <p><span>Meeting with jack</span> Hi James, We need to do user testing by monday, Please add me in slack group.....</p>
+                        <!-- Message 4 -->
+                        <div class="inbox-msg flex">
+                            <input type="checkbox" name="select" id="select">
+                            <img src="./images/inbox4.jpg" alt="user-image">
+                            <h2>Frank Malone</h2>
+                            <div class="msg">
+                                <p><span>Meeting with jack</span> Hi James, We need to do user testing by monday, Please add me in slack group.....</p>
+                            </div>
+                            <i class="fas fa-ellipsis-v"></i>
                         </div>
-                        <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </div>
             </main>

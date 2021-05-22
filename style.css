@@ -2,11 +2,11 @@
 
 :root{
     --clr-primary: #FFFFFF;
-    --clr-secondary: #f8f8f8;
+    --clr-secondary: #f1f1f1;
     --clr-tertiary: #FF653F;
     --clr-text-prim: #2C3E43;
     --clr-text-sec: #7D8289;
-    --clr-text-ter: #D4D6D7;
+    --clr-text-ter: #bdc0c2;
     --clr-highlight: #228FFF;
     --clr-grad1: #415AE0;
     --clr-grad2: #E676F7;
@@ -87,12 +87,18 @@ h4{
 .navbar{
     width: 100vw;
     height: 8vh;
-    padding: 0.6em 1em;
     background-color: var(--clr-primary);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-.navbar.flex{
+.nav-container{
+    width: 100%;
+    height: 100%;
+    padding: 0.6em 1em;
+    max-width: 1800px;
+}
+
+.nav-container.flex{
     width: 100%;
     justify-content: space-between;
     margin: 0 auto;
@@ -150,7 +156,7 @@ h4{
 .main-section{
     padding: 20px;
     padding-bottom: 0;
-    max-width: 1900px;
+    max-width: 1800px;
     margin: 10px auto 0;
     height: 92vh;
     gap: 30px;
@@ -297,6 +303,7 @@ main{
     padding: 15px 20px;
     color: var(--clr-primary);
     overflow: hidden;
+    margin-bottom: 1.4rem;
 }
 
 .live-meeting.flex{
@@ -354,14 +361,6 @@ main{
     border: 2px solid var(--clr-primary);
 }
 
-.circles-stacked .circles .circle img{
-    height: 30px;
-    width: 30px;
-    border: 2px solid var(--clr-border);
-    margin-left: -8px;
-    object-fit: cover;
-}
-
 .live-meeting .btn-transparent{
     color: var(--clr-primary);
     border: 1px solid var(--clr-border);
@@ -380,10 +379,125 @@ main{
     color: var(--clr-text-prim);
 }
 
+/* Cards row */
+.cards-section{
+    margin-bottom: 1.4rem;
+}
 
+.cards-section .top-row.flex{
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
+}
 
+.cards-section .top-row h2{
+    color: var(--clr-text-prim);
+}
 
+.cards-section .cards.flex{
+    justify-content: space-between;
+}
 
+.cards-section .cards .card{
+    width: 24%;
+    height: 100%;
+    background-color: var(--clr-primary);
+}
+
+.cards-section .cards .card .info,
+.cards-section .cards .card .circles-stacked{
+    width: 100%;
+    padding: 20px 20px 10px;
+    border-bottom: 1px solid var(--clr-border);
+}
+
+.cards-section .cards .card.flex{
+    flex-direction: column;
+}
+
+.cards-section .cards .card .info.flex,
+.cards-section .cards .card .status.flex,
+.cards-section .cards .card .circles-stacked.flex{
+    gap: 20px;
+}
+
+.cards .card .info img{
+    height: 60px;
+    width: 60px;
+}
+
+.cards .card .info .names.flex{
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
+}
+
+.cards-section .circle img{
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--clr-primary);
+    margin-left: -8px;
+    object-fit: cover;
+}
+
+.cards .card .status{
+    padding-top: 20px;
+    color: var(--clr-tertiary);
+}
+
+.cards .card .status h3:first-child{
+    color: var(--clr-highlight);
+}
+
+.cards .card .btn-block{
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.cards .card .btn-block:hover{
+    background-color: var(--clr-highlight);
+    color: var(--clr-primary);
+}
+
+.cards .new-card.flex{
+    justify-content: space-between;
+    height: 250px;
+    border: 2px solid var(--clr-highlight);
+    color: var(--clr-highlight);
+}
+
+.cards .new-card .plus{
+    flex: 4;
+    padding: 20px;
+}
+
+.cards .new-card .plus i{
+    background-color: #eff7ff;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cards .new-card h3{
+    flex: 1;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Inbox row */
+.inbox-section .top-row{
+    margin-bottom: 0.6rem;
+}
+
+.inbox-section .inbox-msgs{
+    width: 100%;
+    flex-direction: column;
+}
+
+.inbox-section .inbox-msgs .inbox-msg.flex{
+    gap: 16px;
+    justify-content:flex-start
+}
 
 
 /* Big Plus */
