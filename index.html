@@ -19,7 +19,7 @@
         <nav class="navbar">
             <div class="nav-container flex">
                 <!-- Main title -->
-                <h1 class="title">BOARDASH</h1>
+                <h1 class="title" onclick="toggleTitle()">BOARDASH</h1>
 
                 <!-- Searchbar and button -->
                 <div class="searchbar flex">
@@ -27,17 +27,19 @@
                     <i class="fas fa-search"></i>
                 </div>
 
-                <!-- Alert and icon -->
-                <div class="alert flex">
-                    <i class="far fa-bell"></i>
-                    <a href="#">Set Alert</a>
-                </div>
+                <div class="nav-right flex">
+                    <!-- Alert and icon -->
+                    <div class="alert flex">
+                        <i class="far fa-bell"></i>
+                        <a href="#">Set Alert</a>
+                    </div>
 
-                <!-- User photo and name -->
-                <div class="user-login flex">
-                    <img src="./images/nav-img.jpg" alt="">
-                    <a href="#">Essie Howell</a>
-                    <i class="fa fa-plus"></i>
+                    <!-- User photo and name -->
+                    <div class="user-login flex">
+                        <img src="./images/nav-img.jpg" alt="">
+                        <a href="#">Essie Howell</a>
+                        <i class="fa fa-plus"></i>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -102,12 +104,18 @@
 
                 <!-- Header Row -->
                 <div class="header-row flex">
-                    <h1>Messages</h1>
+                    <div class="ham flex">
+                        <h1>Messages</h1>
+                        <i class="fas fa-bars" onclick="toggleHam()"></i>
+                    </div>
 
                     <div class="float-right flex">
                         <div class="pagination flex">
                             <i class="fas fa-less-than"></i>
-                            <h2>1 - 50 pages</h2>
+                            <div class="pages flex">
+                                <h2>1 - 50</h2>
+                                <h2>pages</h2>
+                            </div>
                             <i class="fas fa-greater-than"></i>
                         </div>
 
@@ -316,5 +324,21 @@
         </div>
 
     </div>
+
+    <script>
+    function toggleTitle(){
+        const title = document.querySelector('.title')
+        const navbar = document.querySelector('.navbar')
+        navbar.classList.toggle('height')
+    }
+
+    function toggleHam(){
+        const sidebar = document.querySelector('.sidebar')
+
+        sidebar.classList.toggle('show')
+    }
+
+        
+    </script>
 </body>
 </html>

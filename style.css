@@ -137,6 +137,10 @@ h4{
     cursor: pointer;
 }
 
+.nav-container .nav-right{
+    gap: 20px;
+}
+
 .navbar .alert{
     flex: 1;
     gap: 10px;
@@ -276,6 +280,15 @@ main.flex{
 
 .header-row.flex{
     justify-content: space-between;
+}
+
+.ham.flex{
+    width: 100%;
+}
+
+.ham.flex i{
+    display: none;
+    color: var(--clr-text-prim);
 }
 
 .float-right.flex{
@@ -590,10 +603,6 @@ main.flex{
         padding-left: 15px;
     }
 
-    .sidebar .user-info.flex{
-        flex-direction: row;
-    }
-
     .live-meeting.flex{
         flex-wrap: nowrap;
     }
@@ -661,7 +670,6 @@ main.flex{
     }
 }
 
-/* Media Queries */
 /* Screen width less than 1000px */
 @media screen and (max-width: 1000px){
     .nav-container.flex{
@@ -705,5 +713,164 @@ main.flex{
         width: 30%;
         min-width: 200px;
         margin-bottom: 20px;
+    }
+}
+
+/* Screen width less than 768px */
+@media screen and (max-width: 768px){
+    .navbar{
+        height: 5vh;
+        overflow: hidden;
+        transition: height 250ms ease-in-out;
+    }
+
+    .height{
+        height: 20vh;
+    }
+
+    .nav-container.flex {
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+
+    main{
+        width: 90%;
+    }
+
+    .main-section{
+        position: relative;
+        margin-top: 6vh;
+    }
+
+    .sidebar{
+        position: absolute;
+        left: -100vw;
+        z-index: 10;
+        width: 40%;
+        max-width: 200px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        transition: left 250ms ease-in-out;
+    }
+
+    .show{
+        left: 0;
+    }
+
+    .sidebar .user-info {
+        padding-left: 20px;
+    }
+
+    .sidebar .menu-item{
+        padding-left: 20px;
+    }
+
+    .ham.flex{
+        justify-content: space-between;
+    }
+
+    .ham.flex i{
+        display: inline;
+    }
+
+    .inbox-section .inbox-msgs .inbox-msg.flex{
+        gap: 20px;
+    }
+
+    .big-plus i{
+        right: 10px;
+    }
+}
+
+/* Screen width less than 550px */
+@media screen and (max-width: 550px){
+    main{
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .pages.flex{
+        flex-direction: column;
+    }
+
+    .live-meeting.flex{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .live-meeting .btns.flex{
+        margin-top: 0;
+    }
+}
+
+/* Screen width less than 460px */
+@media screen and (max-width: 460px){
+    .float-right.flex {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .pages.flex {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .cards-section .cards.flex {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .cards-section .cards .card{
+        width: 100%;
+    }
+
+    .cards-section .cards .card .info.flex,
+    .cards-section .cards .card .status.flex,
+    .cards-section .cards .card .circles-stacked.flex{
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-evenly;
+        gap: 40px;
+    }
+
+    .cards .new-card.flex{
+        height: 250px;
+        justify-self: center;
+    }
+
+    .inbox-section{
+        margin-bottom: 40px;
+    }
+
+    .inbox-section .inbox-msgs .inbox-msg{
+        padding: 14px 10px;
+    }
+    
+    .inbox-section .inbox-msgs .inbox-msg.flex{
+        gap: 10px;
+    }
+
+    .big-plus i{
+        right: 10px;
+        background-color: var(--clr-bg);
+        padding: 10px;
+        top: 94vh;
+    }
+}
+
+/* Screen width less than 370px */
+@media screen and (max-width: 370px){
+    .sidebar.flex{
+        width: 80%;
+    }
+
+    .live-meeting .info.flex,
+    .live-meeting .btns.flex{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inbox-section .inbox-msgs .inbox-msg h3{
+        display: none;
     }
 }
