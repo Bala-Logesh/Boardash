@@ -295,8 +295,13 @@ main.flex{
     gap: 20px;
 }
 
-.pagination.flex{
-    gap: 15px;
+.pagination .pages.flex{
+    justify-content: space-between;
+}
+
+.pages h2{
+    width: 50px;
+    text-align: center;
 }
 
 .pagination i{
@@ -873,4 +878,16 @@ main.flex{
     .inbox-section .inbox-msgs .inbox-msg h3{
         display: none;
     }
+}
+
+/* Screen in landscape */
+@media screen and (orientation: landscape) and (max-height: 500px){
+    .navbar{
+        height: 10vh;
+    }
+
+    .height{
+        height: 40vh;
+    }
+
 }
