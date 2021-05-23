@@ -412,6 +412,8 @@ main.flex{
 
 .cards-section .cards.flex{
     justify-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
 }
 
 .cards-section .cards .card{
@@ -477,10 +479,10 @@ main.flex{
 }
 
 .cards .new-card.flex{
-    justify-content: space-between;
-    height: 250px;
+    justify-content: space-between; 
     border: 2px solid var(--clr-highlight);
     color: var(--clr-highlight);
+    height: 250px;
 }
 
 .cards .new-card .plus{
@@ -588,12 +590,16 @@ main.flex{
         padding-left: 15px;
     }
 
-    .menu-item, .logout {
-        padding-left: 20px;
+    .sidebar .user-info.flex{
+        flex-direction: row;
     }
 
     .live-meeting.flex{
-        justify-content: space-between
+        flex-wrap: nowrap;
+    }
+
+    .menu-item, .logout {
+        padding-left: 20px;
     }
 
     .live-meeting .info .big-a{
@@ -606,6 +612,14 @@ main.flex{
         flex-direction: column;
         gap: 10px;
         margin-left: 20px;
+    }
+
+    .cards-section .cards .card{
+        width: 24%;
+    }
+
+    .cards-section .cards.flex {
+        flex-wrap: wrap;
     }
 
     .cards-section .cards .card .info.flex,
@@ -626,6 +640,11 @@ main.flex{
         gap: 2px;
     }
 
+    .cards .new-card.flex{
+        height: 340px;
+        justify-self: center;
+    }
+
     .inbox-section .inbox-msgs .inbox-msg h2,
     .inbox-section .inbox-msgs .inbox-msg h3{
         text-overflow: ellipsis;
@@ -639,5 +658,52 @@ main.flex{
 
     .big-plus i{
         right: 20px;
+    }
+}
+
+/* Media Queries */
+/* Screen width less than 1000px */
+@media screen and (max-width: 1000px){
+    .nav-container.flex{
+        flex-wrap: wrap;
+    }
+
+    .navbar .title{
+        padding-left: 0;
+    }
+
+    .sidebar .user-info {
+        padding-left: 10px;
+    }
+
+    .sidebar .user-info.flex{
+        margin-top: 40px;
+    }
+
+    .menu-item, .logout {
+        padding-left: 6px;
+    }
+
+    .live-meeting.flex{
+        flex-wrap: wrap;
+    }
+
+    .live-meeting .btns.flex {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .header-row.flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cards-section .cards .card{
+        width: 30%;
+        min-width: 200px;
+        margin-bottom: 20px;
     }
 }
